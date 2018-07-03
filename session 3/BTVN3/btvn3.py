@@ -22,7 +22,7 @@ while loop:
         look = True
         while look:
             upd_pos = int (input ("Update position? "))
-            if upd_pos > 3 or upd_pos < 1:
+            if upd_pos > len(clothes) or upd_pos < 1:
                 print ("You have entered the wrong index. Plz enter the number from 1 to 3")
             else:
                 look = False
@@ -36,7 +36,7 @@ while loop:
         looc = True
         while looc:
             del_pos = int (input ("Delete position? "))
-            if del_pos >3 or del_pos <1:
+            if del_pos > len(clothes) or del_pos <1:
                 print ("You have entered the wrong index. Plz enter the number from 1 to 3")
             else:
                 looc = False

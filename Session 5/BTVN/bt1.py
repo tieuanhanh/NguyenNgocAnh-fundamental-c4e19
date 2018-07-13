@@ -8,6 +8,6 @@ inventory['pocket'] = ['seashell', 'strange berry', 'lint']
 
 del inventory ['backpack'][1]
 
-inventory ['gold'] = [ inventory['gold'], 50 ]
+inventory ['gold'] = inventory['gold'] + 50 
 
 print (inventory)

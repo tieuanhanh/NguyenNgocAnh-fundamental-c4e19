@@ -6,3 +6,4 @@ name = input ("Your full name: ")
 r = " ".join(name.split())
 
 print (r.title())
+

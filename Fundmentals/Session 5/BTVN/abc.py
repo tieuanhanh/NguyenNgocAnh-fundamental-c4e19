@@ -9,6 +9,6 @@ name = input ("Your full name: ")
 
 r = " ".join(name.split())
 
-# print (r.title())
+print (r.title())
 
-print(r)
+# print(r)

@@ -4,9 +4,9 @@ menu = ["Kem", "Xoi", "Pho", "Thit", "Tao pho"]
 # del
 # pop
 
-# del menu [1]
+del menu [1]
 
 menu.pop(1)
 
-# menu.remove("Xoi")
+menu.remove("Xoi")
 print (*menu, sep=", ")

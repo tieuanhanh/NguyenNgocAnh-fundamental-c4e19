@@ -11,7 +11,6 @@ while length > 0:
         forward (length)
         left (90)
     right (10)
-    length -= 3
-    
+    length -= 3    
 
 mainloop()

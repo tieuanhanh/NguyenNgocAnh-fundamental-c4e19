@@ -27,21 +27,13 @@ def check_answer(x, y, op, result, user_choice):
     # User_choice: T/F
     res = calc (x, y, op)
     if res == result:
-        if user_choice == 'T':
+        if user_choice == True:
             return True
         else:
             return False
     else:
-        if user_choice == 'T':
+        if user_choice == True:
             return False
         else:
             return True
 
-# res = check_answer(1, 10, "+", 11, "T")  
-# print (res)
-# res = check_answer(1, 10, "+", 11, "F")  
-# print (res)
-# res = check_answer(1, 10, "+", 12, "T")  
-# print (res)
-# res = check_answer(1, 10, "+", 12, "F")  
-# print (res)

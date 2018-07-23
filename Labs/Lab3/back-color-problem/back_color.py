@@ -57,20 +57,52 @@ def mouse_press(x, y, text, color, quiz_type):
     point = [x, y]
     if quiz_type == 0:
         if text == 'BLUE':
-            is_inside (point, blue_rect)
+            n = is_inside (point, blue_rect)
+            if n == True:
+                return True
+            else:
+                return False
         elif text == 'RED':
-            is_inside (point, red_rect)
+            n = is_inside (point, red_rect)
+            if n == True:
+                return True
+            else:
+                return False
         elif text == 'YELLOW':
-            is_inside (point, yellow_rect)
+            n = is_inside (point, yellow_rect)
+            if n == True:
+                return True
+            else:
+                return False
         elif text == 'GREEN':
-            is_inside (point, green_rect)
+            n = is_inside (point, green_rect)
+            if n == True:
+                return True
+            else:
+                return False
     else:
         if color == '#3F51B5':
-            is_inside (point, blue_rect)
+            n = is_inside (point, blue_rect)
+            if n == True:
+                return True
+            else:
+                return False
         elif color == '#C62828':
-            is_inside (point, red_rect)
+            n = is_inside (point, red_rect)
+            if n == True:
+                return True
+            else:
+                return False
         elif color == '#FFD600' :
-            is_inside (point, yellow_rect)
+            n = is_inside (point, yellow_rect)
+            if n == True:
+                return True
+            else:
+                return False
         elif color == '#4CAF50':
-            is_inside (point, green_rect)
+            n = is_inside (point, green_rect)
+            if n == True:
+                return True
+            else:
+                return False
     

@@ -11,9 +11,9 @@ def user(username):
         "age": 23}
         }
     if username in users:
-        # return "Your name is {} and your age is {}.".format(users[username]["name"], users[username]["age"])
-        for i in users[username].keys():
-            return users[username][i]
+        return "Your name is {} and your age is {}.".format(users[username]["name"], users[username]["age"])
+        # for i in users[username].keys():
+        #     return users[username][i]
     else:
         return "Not found"
 

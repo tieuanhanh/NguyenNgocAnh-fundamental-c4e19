@@ -2,10 +2,6 @@ from datetime import datetime
 from gmail import GMail, Message
 from random import choice
 
-now = datetime.now()
-
-print (now.hour)
-
 gmail = GMail ('Ngoc Anh <nabi.253@gmail.com>', 'Ngocanh123')
 
 reasons = [ ''' <p style="text-align: center;">(Ốm) H&ocirc;m nay mặt mũi ti&ecirc;u điều</p>
@@ -28,9 +24,12 @@ html_to_send = html_content.replace("{{sickness}}", reason)
 
 msg = Message ('Đơn xin nghỉ học', to = 'nabi.253@gmail.com', html = html_to_send )
 
-if now.hour == 7:
-    gmail.send(msg)
-    print ("Mail sent")
+while loop = True:
+    now = datetime.now()
+    if now.hour == 19:
+        gmail.send(msg)
+        break
+      
    
 
 

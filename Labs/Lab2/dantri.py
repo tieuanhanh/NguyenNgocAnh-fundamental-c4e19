@@ -59,11 +59,15 @@ li_list = ul.find_all("li")
 # code mau:
 posts =[]
 for li in li_list:
-    post ={}
+    post ={
+        'title': 'x',
+        'link': 'y'
+    }
     a = li.h4.a
     title = a.string
     href = url + a['href']
     post['title'] = title
     post['link'] = href
     posts.append(post)
-pyexcel.save_as(records = posts, dest_file_name = "dantri2.xlsx")
+print (post)
+# pyexcel.save_as(records = posts, dest_file_name = "dantri2.xlsx")

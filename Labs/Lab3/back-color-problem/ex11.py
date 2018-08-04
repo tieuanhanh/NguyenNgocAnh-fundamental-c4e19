@@ -4,8 +4,8 @@ def is_inside (point_position, rectangle_position):
     else:
         return False
 
-if is_inside ([100, 120], [140, 60, 100, 200]) == False:
-    print ("Well done")
-else:
-    print ("Oops")
+# if is_inside ([200, 120], [140, 60, 100, 200]) == True:
+#     print ("Well done")
+# else:
+#     print ("Oops")
 

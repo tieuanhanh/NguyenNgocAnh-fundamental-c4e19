@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mua dong khong lanh</title>
+</head>
+<body>
+    <h1>Admin Page</h1>
+    <table border="1px">
+        <thead>
+            <th> STT </th>   
+            <!-- #th*n  n = so lan lap lai --> 
+            <th> Ten </th>
+            <th> Nam sinh </th>
+            <th> Gioi tinh </th>
+            <th> Chieu cao </th>
+            <th> SDT</th>
+            <th> Dia chi </th>
+            <th> Trang thai </th>
+            <th></th>
+        </thead>
+        <tbody>
+            {% for service in all_service %}   
+            <tr>
+                <td> {{loop.index}} </td>
+                <td> {{service.name}} </td> 
+                <td> {{service.yob}} </td>
+                <!-- 1 == True, 0 == False -->
+                <td> {{"nam" if service.gender else "nu"}} </td>
+                <td> {{service.height}}</td>
+                <td> {{service.phone}}</td>
+                <td> {{service.address}}</td>
+                <td> {{"ranh" if service.status else "deo ranh"}}</td>
+                <td>
+                    <a href="{{url_for('update_service', service_id = service.id )}}">Sua</a>
+                    <a href="{{url_for('delete', service_id = service.id )}}">Xoa</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

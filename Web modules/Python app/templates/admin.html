@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Admin Page</h1>
+    <a href = "{{url_for('create')}}" > Thêm dịch vụ mới </a>
     <table border="1px">
         <thead>
             <th> STT </th>   
@@ -41,5 +42,8 @@
             {% endfor %}
         </tbody>
     </table>
+    <br>
+    <a href="{{url_for('order_page')}}"> Xem các yêu cầu dịch vụ </a>
+    <a href="{{url_for('admin_logout')}}"> Đăng xuất </a>
 </body>
 </html>

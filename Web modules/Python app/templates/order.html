@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Danh sách yêu cầu</title>
+</head>
+<body>
+    <h1> Danh sách yêu cầu</h1>
+    <table border = "1px">
+        <thead>
+            <th>STT</th>
+            <th>Đối tác</th>
+            <th>Người dùng</th>
+            <th>Thời gian yêu cầu</th>
+        </thead>
+        <tbody>
+            {% for order in all_order %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{order.service_id.name}}</td>
+                <td>{{order.user_id.username}}</td>
+                <td>{{order.time}}</td>
+                <td><a href ="{{url_for('is_accepted', order_id = order.id )}}"> Phê duyệt yêu cầu </a> </td>
+            </tr>
+            {% endfor %}    
+        </tbody>
+    </table>
+</body>
+</html>

@@ -8,9 +8,35 @@
 </head>
 <body>
     <h1> Mùa Đông Không Lạnh </h1>
+    <a href="{{url_for('sign_in')}}"> Chưa có tài khoản?</a>
+    
+    <a href="{{url_for('logout')}}"> Đăng xuất </a> 
+    <a href="{{url_for('login')}}"> Đăng nhập </a>
+    <br>
+
     <a href="{{url_for('search', g = 0)}}">Bạn là nam</a>
     <a href="{{url_for('search', g = 1)}}">Bạn là nữ</a>
     <br>
     <a href="{{url_for('firstmales')}}" target = #>Top 10 nam khach hang dat gia</a>
+    <br>
+    <br>
+    <br>
+
+    <hr>
+    {% for service in all_service %}
+    <div>
+        
+        <b>{{service.name}}</b><br>
+        <img src= "{{service.image}}" alt = "" width = "220px">
+        <p>{{service.yob}}</p>
+        <p>{{service.address}}</p>
+        <a href="{{url_for('detail', service_id = service.id)}}"> Chi tiết </a>
+        <hr>
+    </div>
+    {% endfor %}
+
+    <b> Bạn là admin? </b>
+    <a href = "{{url_for('admin_login')}}"> Đăng nhập </a>
+    <a href = "{{url_for('admin_logout')}}"> Đăng xuất </a>
 </body>
 </html>

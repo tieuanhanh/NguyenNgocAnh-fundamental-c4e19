@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMS</title>
+</head>
+<body>
+    <h1> Welcome to the new era of videos </h1> 
+    <a href = {{url_for('login')}}> Dang nhap </a>
+    {% for video in videos %}
+        <div>
+            <img src="{{video.thumbnail}}" alt = "" width = "220px" height ="130">
+            <br>
+            <b>{{video.title}}</b>
+            <br>
+            <span>{{ video.views}} views</span>
+            <a href="{{url_for('detail', youtube_id = video.youtube_id)}}">Xem</a>
+            <br>
+            <br>
+            <br>
+        </div>
+    {% endfor %}
+</body>
+</html>

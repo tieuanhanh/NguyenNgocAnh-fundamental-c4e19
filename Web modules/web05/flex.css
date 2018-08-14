@@ -1,0 +1,36 @@
+#flex-box {
+    background-color: gray;
+    display: flex;
+    flex-flow: row wrap;
+    /* row: xếp theo hàng từ trái qua
+    row-reverse
+    column
+    colum-reverse */
+    /* wrap: tăng height để bao toàn bộ các box
+    nowrap: co kéo width */
+    /* justify-content: space-around; */
+    /*  */
+    /* flex-end: giữ thứ tự các box, mặc dù các box sang phải */
+    /* center */
+    /* space-around */
+    /* space-between */
+    height: 300px;
+    align-items: flex-start;
+    /* flex-end, center */
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.w-50px{
+    width: 50px;
+}
+
+.h-50px{
+    height: 50px;
+}
+
+.m-10px{
+    margin: 10px;
+}

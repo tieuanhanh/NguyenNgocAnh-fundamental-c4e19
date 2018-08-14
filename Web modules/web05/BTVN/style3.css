@@ -1,0 +1,193 @@
+.text-right{
+    text-align: right;
+}
+
+
+.w-20{
+    width: 20%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-79{
+    width: 79%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-300px{
+    width: 300px;
+}
+
+.w-800px{
+    width: 800px;
+}
+
+.h-500px{
+    height: 500px;
+}
+
+.h-100px{
+    height: 100px;
+}
+
+.h-150px{
+    height: 150px;
+}
+
+.h-200px{
+    height: 200px;
+}
+
+.h-230px{
+    height: 230px;
+}
+
+.h-30px{
+    height: 30px;
+}
+
+.h-20px{
+    height: 20px;
+}
+
+.h-50px{
+    height: 50px;
+}
+
+.box-model{
+
+    border: 1px solid black;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.b-flex1{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-green1{
+    background-color: teal;
+}
+
+.bg-blue1{
+    background-color: cornflowerblue;
+}
+
+.bg-blue{
+    background-color: lightskyblue;
+}
+
+.bg-pink{
+    background-color: lightpink;
+}
+
+.big-flex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.b-flex2{
+    display: flex;
+    width: 79%;
+    height: 500px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    background-color: aqua;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.bg-aqua{
+    background-color: aqua;
+}
+
+.m-10px{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.bg-gray{
+    background-color: gray;
+}
+
+.small-flex1{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: space-around;
+}
+
+.small-flex2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.m-side-10px{
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.m-1px{
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.bg-green2{
+    background-color: darkgreen;
+}
+
+.m-bottom-15px{
+    margin-bottom: 15px;
+}
+
+.m-bottom-5px{
+    margin-bottom: 5px;
+}
+
+.bg-brown{
+    background-color: lightslategray;
+}
+
+.bg-img{
+    background-image: url(images/header.jpg);
+}
+
+.white-text{
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.black-text{
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.new-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

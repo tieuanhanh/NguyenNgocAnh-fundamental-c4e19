@@ -1,0 +1,91 @@
+.text-success{
+    color: green;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.in-left{
+    float: left;
+}
+.in-right{
+    float: right;
+}
+
+.bg-green{
+    background-color: lightgreen;
+}
+
+.w-200px{
+    width: 200px;
+}
+.w-50px{
+    width: 50px;
+}
+
+
+.w-50{
+    width: 50%;
+}
+/* 50% chiều rộng của tag cha: body */
+.w-20{
+    width: 20%;
+}
+.w-59{
+    width: 59%;
+}
+.w-90{
+    width: 90%;
+}
+
+.h-100px{
+    height: 100px;
+}
+.h-1000px{
+    height: 1000px;
+}
+.h-80px{
+    height: 80px;
+}
+.h-50px{
+    height: 50px;
+}
+.h-30{
+    height:30;
+}
+
+.bg-blue{
+    background-color: dodgerblue;
+}
+.bg-red{
+    background-color: orangered;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+/* #box-model {
+    border: 1px solid red;
+    /* width style color */
+    /* chỉnh riêng: border-width */
+    /* margin: 10px 20px 30px 40px;
+    /* margin theo chiều kim đồng hồ: top right bottom left */
+    /* padding: 5px 10px 15px 20px; */
+/* } */
+
+.box-model{
+    margin: 0px 0px;
+    padding: 20px 20px
+}
+
+.mode2{
+    margin: 0px 0px;
+}
+
+#inner-div {
+    width: 50%;
+    height: 50px;
+    background-color: red;
+}

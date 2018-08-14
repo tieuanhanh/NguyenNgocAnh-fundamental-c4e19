@@ -1,0 +1,38 @@
+.white-letter{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.d-radius{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px
+}
+
+.bg{
+    height: 500px;
+    width: 100%;
+    background-image: url("https://hinhchuctet.com/wp-content/uploads/2018/03/hinh-nen-laptop-dep-600x337.jpg");
+}
+
+.flex-box{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap;
+}
+
+.big-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}

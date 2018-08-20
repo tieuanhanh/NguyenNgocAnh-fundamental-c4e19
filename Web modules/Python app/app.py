@@ -29,7 +29,7 @@ def admin_login():
         username = form['username']
         password = form['password']
         find_admin = Admin.objects(username = username, password = password)
-        if len(find_admin) == 1:
+        if len(find_admin) != 0:
             session['admin_login'] = True
             return redirect (url_for('admin'))
         else:
@@ -79,7 +79,7 @@ def login():
         username = form['username']
         password = form['password']
         find = User.objects(username = username, password = password)
-        if len(find) == 1:
+        if len(find) != 0:
             session['logged_in'] = True
             session['user_id'] = str(find[0].id)
             return redirect (url_for('index'))

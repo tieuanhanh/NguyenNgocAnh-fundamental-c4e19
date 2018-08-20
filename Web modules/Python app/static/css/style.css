@@ -1,0 +1,40 @@
+.font-lobster{
+    font-family: 'Lobster', cursive;
+}
+
+.bg-image{
+    background-image: url("../image/night.jpg");
+    height: 500px;
+}
+
+.h-200px{
+    height: 200px;
+}
+
+.h-100px{
+    height: 100px;
+}
+
+.h-150px{
+    height: 150px;
+}
+
+.w-150px{
+    width: 150px;
+}
+
+.w-100px{
+    width: 100px;
+}
+
+.h-200px{
+    height: 200px;
+}
+
+.h-200px{
+    height: 200px;
+}
+
+.w-300px{
+    width: 300px;
+}
